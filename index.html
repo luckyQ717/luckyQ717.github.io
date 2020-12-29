@@ -144,6 +144,73 @@
     
     
     <article
+  id="post-typeScript总结"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/12/29/typeScript%E6%80%BB%E7%BB%93/"
+    >typeScript总结</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/12/29/typeScript%E6%80%BB%E7%BB%93/" class="article-date">
+  <time datetime="2020-12-29T12:56:20.000Z" itemprop="datePublished">2020-12-29</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>首先呢，它是跟javaScript一样属于一种脚本语言； 其次，它始于javaScript,归于javaScript，属于javaScript的超集，它内部包含了javaScript的所有语法，而且在此基础上还扩展了其他语法，可以编译成javaScript在任何浏览器中运行。</p>
+<h3 id="二、基本使用"><a href="#二、基本使用" class="headerlink" title="二、基本使用"></a>二、基本使用</h3><p>（一）、搭建运行环境<br>    1.node.js：<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a> 2.typescript：命令提示符运行：npm install -g <a href="mailto:&#116;&#121;&#x70;&#101;&#115;&#99;&#x72;&#x69;&#x70;&#116;&#x40;&#49;&#x2e;&#56;">&#116;&#121;&#x70;&#101;&#115;&#99;&#x72;&#x69;&#x70;&#116;&#x40;&#49;&#x2e;&#56;</a> PS:-g意味着全局安装typescript；@1.8表示安装的版本</p>
+<p>（二）、创建文件</p>
+<pre><code>创建index.ts
+创建index.html</code></pre>
+<p>（三）、 运行<br>    tsc index.ts 运行结果如果： 生成对应得js文件<br>    好了说完它的运行流程，下面来具体说下它的基础语法； ts 对于js最大的变化就在于增加了 静态类型、类、模块、接口、类型注解</p>
+<h2 id="基础静态类型和对象类型"><a href="#基础静态类型和对象类型" class="headerlink" title="基础静态类型和对象类型"></a>基础静态类型和对象类型</h2><h3 id="静态类型"><a href="#静态类型" class="headerlink" title="静态类型"></a>静态类型</h3><p><strong>null,undefinde,symbol,boolean，void等。</strong></p>
+<pre><code>1.对象类型
+2.对象类型
+3.数组类型
+4.类类型
+5.函数类型
+
+对象类型
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const xiaoJieJie: &#123;</span><br><span class="line">name: string,</span><br><span class="line">age: number</span><br><span class="line">&#125; &#x3D; &#123;</span><br><span class="line">name: &#39;小明&#39;,</span><br><span class="line">age: 14</span><br><span class="line">&#125;</span><br><span class="line">console.log(xiaoJieJie.name)</span><br></pre></td></tr></table></figure>
+数组类型
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const arr : number [] &#x3D; [1,2,3];</span><br><span class="line">const xiaoJieJies : String [] &#x3D; [&#39;小明&#39;,&#39;小红&#39;,&#39;小黄&#39;];</span><br><span class="line">console.log(xiaoJieJies)</span><br></pre></td></tr></table></figure>
+类类型
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">class Person&#123;&#125;</span><br><span class="line">const xm : Person &#x3D; new Person();</span><br><span class="line">console.log(xm);</span><br></pre></td></tr></table></figure>
+函数类型
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const j : () &#x3D;&gt; string &#x3D; ()&#x3D;&gt; &#123;return &#39;小明&#39;&#125;;</span><br><span class="line">console.log(j);</span><br></pre></td></tr></table></figure></code></pre>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
   id="post-React中组件间通信的几种方式"
   class="article article-type-post"
   itemscope
